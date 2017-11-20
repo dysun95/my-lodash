@@ -7,6 +7,9 @@ import {
 import {
     difference
 } from './difference.js'
+import {
+    drop
+} from './drop.js'
 
 // console.log(chunk(['a', 'b', 'c', 'd'], 3))
 
@@ -24,10 +27,10 @@ let a = [1, 2, 3, 4, 5, 'a', [1, 2, 3], {
     'a': 1,
     'b': 2
 }]
-let b = [1, 2, [1, 2, 3, 4], {
-    'a': 1,
-    'b': 2
-}]
-let c
+// let b = [1, 2, [1, 2, 3, 4], {
+//     'a': 1,
+//     'b': 2
+// }]
+// let c
 
-console.log(difference([...a], b))
+console.log(drop(a, 10))
