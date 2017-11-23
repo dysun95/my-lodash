@@ -10,7 +10,9 @@ import {
 import {
     drop
 } from './drop.js'
-
+import {
+    dropRight
+} from './dropRight.js'
 // console.log(chunk(['a', 'b', 'c', 'd'], 3))
 
 // let ob = {
@@ -33,4 +35,5 @@ let a = [1, 2, 3, 4, 5, 'a', [1, 2, 3], {
 // }]
 // let c
 
-console.log(drop(a, 10))
+console.log(dropRight(a, 5))
+console.log(a)
